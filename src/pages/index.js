@@ -146,6 +146,7 @@ const IndexPage = () => (
             data-netlify-honeypot="bot-field"
           >
             <div className="row">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Name" />
               </div>
@@ -156,7 +157,9 @@ const IndexPage = () => (
                 <textarea name="message" placeholder="Message" />
               </div>
               <div className="col-12">
-                <button className="buttons">Send Message</button>
+                <button type="submit" className="buttons">
+                  Send Message
+                </button>
               </div>
             </div>
           </form>
