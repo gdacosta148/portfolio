@@ -156,7 +156,7 @@ const IndexPage = () => (
                 <textarea name="message" placeholder="Message" />
               </div>
               <div className="col-12">
-                <input type="submit" value="Send Message" />
+                <button className="buttons">Send Message</button>
               </div>
             </div>
           </form>
